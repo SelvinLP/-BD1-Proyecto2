@@ -40,6 +40,20 @@
 <dataTypeSize>100 CHAR</dataTypeSize>
 <ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="id_departamento" id="190BC0FD-444E-178C-EEEE-3B0FB8176371">
+<createdBy>Aragon Perez</createdBy>
+<createdTime>2020-06-30 05:26:40 UTC</createdTime>
+<generatorID>432EDF19-188C-564D-2005-B84DF2B1CAF1</generatorID>
+<ownerDesignName>modello</ownerDesignName>
+<engineerTo>
+<item key="FC974084-3BC1-0DFD-61AB-EA8A09D27C86" value="true"/>
+</engineerTo>
+<referedAttribute>C675179C-3738-BCE4-25A7-A35ABB463448</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="E72AD9E3-9C19-F321-1980-4FB110700856" name="Municipio PK">

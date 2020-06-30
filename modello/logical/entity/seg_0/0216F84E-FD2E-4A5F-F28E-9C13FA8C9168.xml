@@ -40,6 +40,20 @@
 <dataTypeSize>100 CHAR</dataTypeSize>
 <ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="id_pais" id="20B9BA3F-6E1A-2273-26A7-29DBC6C9F9F5">
+<createdBy>Aragon Perez</createdBy>
+<createdTime>2020-06-30 05:26:29 UTC</createdTime>
+<generatorID>86998275-2777-FE67-7827-6DED6FB06618</generatorID>
+<ownerDesignName>modello</ownerDesignName>
+<engineerTo>
+<item key="FC974084-3BC1-0DFD-61AB-EA8A09D27C86" value="true"/>
+</engineerTo>
+<referedAttribute>50BC3C90-074C-21A6-9726-D772E3E22D13</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="CD6119BA-8868-97AA-21B9-EF5BBBFD62DB" name="Region PK">

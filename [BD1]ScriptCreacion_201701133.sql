@@ -1,0 +1,33 @@
+#CREACION DE TABLAS
+#TABLA PAIS
+CREATE TABLE IF NOT EXISTS pais(
+	id_pais INTEGER PRIMARY KEY NOT NULL AUTO_INCREMENT,
+	nombre VARCHAR(100)
+);
+#TABLA REGION
+CREATE TABLE IF NOT EXISTS region(
+	id_region INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+	nombre VARCHAR(100),
+    fk_id_pais INTEGER,
+    FOREIGN KEY (fk_id_pais) REFERENCES pais(id_pais)
+);
+#TABLA DEPTO
+CREATE TABLE IF NOT EXISTS depto(
+	id_depto INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+	nombre VARCHAR(100),
+    fk_id_region INTEGER,
+    FOREIGN KEY (fk_id_region) REFERENCES region(id_region)
+);
+#TABLA MUNICIPIO
+CREATE TABLE IF NOT EXISTS municipio(
+	id_municipio INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+	nombre VARCHAR(100),
+	fk_id_depto INTEGER,
+    FOREIGN KEY (fk_id_depto) REFERENCES depto(id_depto)
+);
+
+#Eliminando Tablas
+DROP TABLE pais;
+DROP TABLE region;
+DROP TABLE depto;
+DROP TABLE municipio;

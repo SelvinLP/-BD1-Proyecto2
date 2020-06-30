@@ -40,6 +40,20 @@
 <dataTypeSize>100 CHAR</dataTypeSize>
 <ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="id_region" id="2C9937ED-E536-A8F3-C432-E32E5A714B94">
+<createdBy>Aragon Perez</createdBy>
+<createdTime>2020-06-30 05:26:33 UTC</createdTime>
+<generatorID>8179AFFA-6D8D-CEA9-C556-CFFEE8D8AE21</generatorID>
+<ownerDesignName>modello</ownerDesignName>
+<engineerTo>
+<item key="FC974084-3BC1-0DFD-61AB-EA8A09D27C86" value="true"/>
+</engineerTo>
+<referedAttribute>994ADE8E-A2CF-3950-C074-B24835AADA22</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="DBA80F35-016B-7EC0-2EDA-EE1A69C505B2" name="Departamento PK">

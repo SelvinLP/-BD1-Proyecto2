@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="26C85410-626C-D563-B498-F0057E3717F4" name="eleccion_partido">
+<createdBy>Aragon Perez</createdBy>
+<createdTime>2020-07-02 04:04:50 UTC</createdTime>
+<ownerDesignName>modello</ownerDesignName>
+<engineerTo>
+<item key="FC974084-3BC1-0DFD-61AB-EA8A09D27C86" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_eleccion_partido" id="8CC500D1-0BEB-8741-4BB2-0DA18982A29B">
+<createdBy>Aragon Perez</createdBy>
+<createdTime>2020-07-02 04:05:00 UTC</createdTime>
+<ownerDesignName>modello</ownerDesignName>
+<engineerTo>
+<item key="FC974084-3BC1-0DFD-61AB-EA8A09D27C86" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_eleccion" id="6E8A9828-6FA0-6777-1AC4-C3F04CCF800F">
+<createdBy>Aragon Perez</createdBy>
+<createdTime>2020-07-02 04:05:23 UTC</createdTime>
+<generatorID>E30BF1CA-88FC-FCA1-5E17-597CEC24FCA7</generatorID>
+<ownerDesignName>modello</ownerDesignName>
+<engineerTo>
+<item key="FC974084-3BC1-0DFD-61AB-EA8A09D27C86" value="true"/>
+</engineerTo>
+<referedAttribute>67351F77-FD41-AA34-0541-978C0B817F61</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_partido" id="ABD3D7A3-891C-C246-E41B-FEB291FDC85C">
+<createdBy>Aragon Perez</createdBy>
+<createdTime>2020-07-02 04:05:27 UTC</createdTime>
+<generatorID>D34F15F4-2883-220E-8D22-41DD714427EC</generatorID>
+<ownerDesignName>modello</ownerDesignName>
+<engineerTo>
+<item key="FC974084-3BC1-0DFD-61AB-EA8A09D27C86" value="true"/>
+</engineerTo>
+<referedAttribute>E6F5A93A-7A9D-65D1-ABEC-E5D8207F9B4D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1DDC4226-11E9-55E8-5EE5-E5045E0B9036" name="eleccion_partido PK">
+<createdBy>Aragon Perez</createdBy>
+<createdTime>2020-07-02 04:05:11 UTC</createdTime>
+<ownerDesignName>modello</ownerDesignName>
+<engineerTo>
+<item key="FC974084-3BC1-0DFD-61AB-EA8A09D27C86" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8CC500D1-0BEB-8741-4BB2-0DA18982A29B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

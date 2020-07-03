@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E68AF0F6-E2CE-42A4-83F8-13771FCE43E6" name="Eleccion">
+<createdBy>Aragon Perez</createdBy>
+<createdTime>2020-07-03 18:17:48 UTC</createdTime>
+<generatorID>DF9EF215-DDB8-04DE-F71E-0622C455D06A</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_eleccion" id="785E70B7-8B0D-C179-5659-4A92282EE05F">
+<createdBy>Aragon Perez</createdBy>
+<createdTime>2020-07-03 18:17:48 UTC</createdTime>
+<generatorID>63C2193C-9B39-3A84-E7B8-56DAE90D72FF</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre_eleccion" id="4E6EFDBA-8A8D-08C9-0BCE-8BB2AC83C1D5">
+<createdBy>Aragon Perez</createdBy>
+<createdTime>2020-07-03 18:17:48 UTC</createdTime>
+<generatorID>B5E3BBE1-D208-C3D1-B17E-20C2AFBB2A95</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="año" id="4FCF0904-0082-BBFD-7AEA-1F4866C67C0D">
+<createdBy>Aragon Perez</createdBy>
+<createdTime>2020-07-03 18:17:48 UTC</createdTime>
+<generatorID>69349333-0F27-80EB-5283-726D9CF15826</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F9351327-7331-E5C7-1ED3-07C333A50A81" name="Eleccion_PK">
+<createdBy>Aragon Perez</createdBy>
+<createdTime>2020-07-03 18:17:48 UTC</createdTime>
+<generatorID>D1595DBB-7805-B64E-A881-03F7CE1F994A</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="785E70B7-8B0D-C179-5659-4A92282EE05F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

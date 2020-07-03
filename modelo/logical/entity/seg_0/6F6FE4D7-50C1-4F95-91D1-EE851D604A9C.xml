@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6F6FE4D7-50C1-4F95-91D1-EE851D604A9C" name="Partido">
+<createdBy>Aragon Perez</createdBy>
+<createdTime>2020-07-03 18:15:28 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="591A9418-E67D-7A00-2C01-83DE4607E37B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_partido" id="B384EF36-69D6-0692-5054-8175A301F3D2">
+<createdBy>Aragon Perez</createdBy>
+<createdTime>2020-07-03 18:15:32 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="591A9418-E67D-7A00-2C01-83DE4607E37B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="910C23B4-CF50-4E40-548D-1EFFCE86D9B6">
+<createdBy>Aragon Perez</createdBy>
+<createdTime>2020-07-03 18:15:43 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="591A9418-E67D-7A00-2C01-83DE4607E37B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre_partido" id="B6E2F6B2-4D1A-C351-8CFE-4E4396342504">
+<createdBy>Aragon Perez</createdBy>
+<createdTime>2020-07-03 18:16:02 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="591A9418-E67D-7A00-2C01-83DE4607E37B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2C008FC5-CCEE-A06B-37F6-65B246538222" name="Partido PK">
+<createdBy>Aragon Perez</createdBy>
+<createdTime>2020-07-03 18:15:42 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="591A9418-E67D-7A00-2C01-83DE4607E37B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B384EF36-69D6-0692-5054-8175A301F3D2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

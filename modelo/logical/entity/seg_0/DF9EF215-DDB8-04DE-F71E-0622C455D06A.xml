@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DF9EF215-DDB8-04DE-F71E-0622C455D06A" name="Eleccion">
+<createdBy>Aragon Perez</createdBy>
+<createdTime>2020-07-03 18:14:40 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="591A9418-E67D-7A00-2C01-83DE4607E37B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_eleccion" id="63C2193C-9B39-3A84-E7B8-56DAE90D72FF">
+<createdBy>Aragon Perez</createdBy>
+<createdTime>2020-07-03 18:14:45 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="591A9418-E67D-7A00-2C01-83DE4607E37B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre_eleccion" id="B5E3BBE1-D208-C3D1-B17E-20C2AFBB2A95">
+<createdBy>Aragon Perez</createdBy>
+<createdTime>2020-07-03 18:14:57 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="591A9418-E67D-7A00-2C01-83DE4607E37B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="año" id="69349333-0F27-80EB-5283-726D9CF15826">
+<createdBy>Aragon Perez</createdBy>
+<createdTime>2020-07-03 18:15:11 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="591A9418-E67D-7A00-2C01-83DE4607E37B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D1595DBB-7805-B64E-A881-03F7CE1F994A" name="Eleccion PK">
+<createdBy>Aragon Perez</createdBy>
+<createdTime>2020-07-03 18:14:56 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="591A9418-E67D-7A00-2C01-83DE4607E37B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>63C2193C-9B39-3A84-E7B8-56DAE90D72FF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

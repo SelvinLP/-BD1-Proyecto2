@@ -1,0 +1,182 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="148A02E4-3902-FCB9-943E-C04444229CB4" name="Voto">
+<createdBy>Aragon Perez</createdBy>
+<createdTime>2020-07-03 18:17:48 UTC</createdTime>
+<generatorID>9E61D55A-398B-492D-C077-36A8B6BE482D</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_voto" id="464F0803-93E4-980C-D537-AA17A3564831">
+<createdBy>Aragon Perez</createdBy>
+<createdTime>2020-07-03 18:17:48 UTC</createdTime>
+<generatorID>3A77A105-246E-EE0E-7061-5D99F1D7BAD1</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sexo" id="E94A1EA6-5084-DA93-18FA-DBEAEEC0FADD">
+<createdBy>Aragon Perez</createdBy>
+<createdTime>2020-07-03 18:17:48 UTC</createdTime>
+<generatorID>8ABF0CD6-0249-5ACF-16E8-03F89C1E23A9</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="analfabetos" id="7B5EA071-78B5-5FDA-EFAD-007A709BBD83">
+<createdBy>Aragon Perez</createdBy>
+<createdTime>2020-07-03 18:17:48 UTC</createdTime>
+<generatorID>4831595F-D46C-F029-ABB5-8221C1227BFD</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="alfabetos" id="A7492C86-CC42-AC52-AA30-9962A3FE79E6">
+<createdBy>Aragon Perez</createdBy>
+<createdTime>2020-07-03 18:17:48 UTC</createdTime>
+<generatorID>39FF058F-636B-7B9F-BEAB-9C6E2BCF529D</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="primaria" id="31C609B9-3E7F-4FDD-9F8D-6BBB1C6DE231">
+<createdBy>Aragon Perez</createdBy>
+<createdTime>2020-07-03 18:17:48 UTC</createdTime>
+<generatorID>47C52BB9-CB83-65AD-323C-0B6C891C5494</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nivel_medio" id="E0042F9F-AA4E-1DBE-C738-CE3714A89B5B">
+<createdBy>Aragon Perez</createdBy>
+<createdTime>2020-07-03 18:17:48 UTC</createdTime>
+<generatorID>D5A20149-2FFD-8F23-841F-3EEE4738EDFC</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="universitarios" id="52E4BA11-8D7E-5CBC-A9C8-6A2B23F1C2A9">
+<createdBy>Aragon Perez</createdBy>
+<createdTime>2020-07-03 18:17:48 UTC</createdTime>
+<generatorID>6F6B4267-FE40-CC4C-2ABB-4B9366D8C832</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Raza_id_raza" id="57E396B3-D06D-F41F-7614-F97E7B051F57">
+<createdBy>Aragon Perez</createdBy>
+<createdTime>2020-07-03 18:17:48 UTC</createdTime>
+<generatorID>323671EC-64C3-D576-A3CD-28220748A2EA</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A47AEEE0-6C21-E039-62E0-79F357327518" referredColumn="C04062A6-811F-2A1A-B97C-BEC4197B6D19"/>
+</associations>
+</Column>
+<Column name="Zona_id_zona" id="A92660EC-1998-140B-81CD-E9B342A0F88E">
+<createdBy>Aragon Perez</createdBy>
+<createdTime>2020-07-03 18:17:48 UTC</createdTime>
+<generatorID>4C559913-C740-6FAE-3A65-C0A572458F41</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0B72A823-91AA-3A34-CCB3-AD603606514B" referredColumn="2F013FAA-BE60-16B3-31D7-7E43032B2F96"/>
+</associations>
+</Column>
+<Column name="Eleccion_Partido_id_eleccion_partido" id="1AC28347-931C-0F6A-0BC6-4D6B730FF1F0">
+<createdBy>Aragon Perez</createdBy>
+<createdTime>2020-07-03 18:17:48 UTC</createdTime>
+<generatorID>7FF2ECAF-D856-8073-AF20-15CC18F93253</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="390B7BE5-1084-D859-9EA1-E2A2A3B76A68" referredColumn="5BCCBE3C-FD20-6BBF-E4C2-54D64CDAD531"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="58CC35FD-D950-82CE-77CF-AC018BF41C27" name="Voto_PK">
+<createdBy>Aragon Perez</createdBy>
+<createdTime>2020-07-03 18:17:48 UTC</createdTime>
+<generatorID>D6756A92-3201-AA36-C914-0812D7A501CC</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="464F0803-93E4-980C-D537-AA17A3564831"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1988A99F-3BD7-7F59-1F27-65E2D8882C25" name="Voto_Eleccion_Partido_FK">
+<createdBy>Aragon Perez</createdBy>
+<createdTime>2020-07-03 18:17:48 UTC</createdTime>
+<generatorID>3345323C-6569-0D3A-EE9C-F595048290BA</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1AC28347-931C-0F6A-0BC6-4D6B730FF1F0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5D600879-61C1-5D6C-B31F-B898A34911B7" name="Voto_Raza_FK">
+<createdBy>Aragon Perez</createdBy>
+<createdTime>2020-07-03 18:17:48 UTC</createdTime>
+<generatorID>16530484-7DE1-EEB9-E9C1-21ED20956629</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="57E396B3-D06D-F41F-7614-F97E7B051F57"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7EF789F3-1A30-968A-E44E-C5E78A41B9CD" name="Voto_Zona_FK">
+<createdBy>Aragon Perez</createdBy>
+<createdTime>2020-07-03 18:17:48 UTC</createdTime>
+<generatorID>1B84E6E7-6F7A-C191-C46B-78DF2A56F53F</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A92660EC-1998-140B-81CD-E9B342A0F88E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

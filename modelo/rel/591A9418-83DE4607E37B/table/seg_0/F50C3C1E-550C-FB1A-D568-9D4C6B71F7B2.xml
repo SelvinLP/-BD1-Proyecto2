@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F50C3C1E-550C-FB1A-D568-9D4C6B71F7B2" name="Depto">
+<createdBy>Aragon Perez</createdBy>
+<createdTime>2020-07-03 18:17:48 UTC</createdTime>
+<generatorID>D098394A-B7EE-1B09-F969-BB4E6838C81D</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_depto" id="51F3B697-5F72-4BFB-8959-B5C74D498044">
+<createdBy>Aragon Perez</createdBy>
+<createdTime>2020-07-03 18:17:48 UTC</createdTime>
+<generatorID>D7EAEFFD-7BB0-8E5A-B4FD-9C7BEAB6B3AC</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="FC58FE07-5143-84F6-E5D9-650C01764783">
+<createdBy>Aragon Perez</createdBy>
+<createdTime>2020-07-03 18:17:48 UTC</createdTime>
+<generatorID>79DB68E0-5342-3270-AF02-4D0182FA726F</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Region_id_region" id="A795AD86-B3EA-918E-56AD-8E1266A8AC54">
+<createdBy>Aragon Perez</createdBy>
+<createdTime>2020-07-03 18:17:48 UTC</createdTime>
+<generatorID>6733A4D9-950D-94C2-20C1-4E1DCA5699C9</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AE09FAD3-F473-7CD2-BCCE-D92893B21752" referredColumn="8032F2C9-398A-56EC-37F4-EBAF0C7D2F7B"/>
+</associations>
+</Column>
+<Column name="Pais_id_pais" id="4F5F9E27-8E7C-DFCE-B12E-4EFB8263B00B">
+<createdBy>Aragon Perez</createdBy>
+<createdTime>2020-07-03 18:17:48 UTC</createdTime>
+<generatorID>5980FB67-1D90-3240-1BFC-D279C486073F</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3280830C-04E8-694A-CCF2-92132EF7C447" referredColumn="0123500C-2A5D-2301-E2F3-1967E2AF8A81"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DD49858E-588F-3BF0-55D0-74A86A7E72B9" name="Depto_PK">
+<createdBy>Aragon Perez</createdBy>
+<createdTime>2020-07-03 18:17:48 UTC</createdTime>
+<generatorID>50633E5B-2FBE-420B-6982-E6F3568CE055</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="51F3B697-5F72-4BFB-8959-B5C74D498044"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9A40908E-B293-ECD2-58EF-AB504BDDB1D2" name="Depto_Region_FK">
+<createdBy>Aragon Perez</createdBy>
+<createdTime>2020-07-03 18:17:48 UTC</createdTime>
+<generatorID>15F4A6EE-954E-9DC6-684B-D6BD15B402D9</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A795AD86-B3EA-918E-56AD-8E1266A8AC54"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6F468C79-9BDF-394D-CDF7-5BDC9FB2EB6D" name="Depto_Pais_FK">
+<createdBy>Aragon Perez</createdBy>
+<createdTime>2020-07-03 18:17:48 UTC</createdTime>
+<generatorID>7C4FF5DF-655A-6A40-E77D-AAC722F56D0B</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4F5F9E27-8E7C-DFCE-B12E-4EFB8263B00B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

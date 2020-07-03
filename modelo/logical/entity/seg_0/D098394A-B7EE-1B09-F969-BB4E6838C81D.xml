@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D098394A-B7EE-1B09-F969-BB4E6838C81D" name="Depto">
+<createdBy>Aragon Perez</createdBy>
+<createdTime>2020-07-03 18:04:53 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="591A9418-E67D-7A00-2C01-83DE4607E37B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_depto" id="D7EAEFFD-7BB0-8E5A-B4FD-9C7BEAB6B3AC">
+<createdBy>Aragon Perez</createdBy>
+<createdTime>2020-07-03 18:04:53 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="591A9418-E67D-7A00-2C01-83DE4607E37B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="79DB68E0-5342-3270-AF02-4D0182FA726F">
+<createdBy>Aragon Perez</createdBy>
+<createdTime>2020-07-03 18:04:53 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="591A9418-E67D-7A00-2C01-83DE4607E37B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_region" id="6733A4D9-950D-94C2-20C1-4E1DCA5699C9">
+<createdBy>Aragon Perez</createdBy>
+<createdTime>2020-07-03 18:05:29 UTC</createdTime>
+<generatorID>15F4A6EE-954E-9DC6-684B-D6BD15B402D9</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="591A9418-E67D-7A00-2C01-83DE4607E37B" value="true"/>
+</engineerTo>
+<referedAttribute>2D0E4C8F-6E30-5F26-FB8B-06E46BF2431C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_pais" id="5980FB67-1D90-3240-1BFC-D279C486073F">
+<createdBy>Aragon Perez</createdBy>
+<createdTime>2020-07-03 18:05:33 UTC</createdTime>
+<generatorID>7C4FF5DF-655A-6A40-E77D-AAC722F56D0B</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="591A9418-E67D-7A00-2C01-83DE4607E37B" value="true"/>
+</engineerTo>
+<referedAttribute>6DB9B75D-6541-BE92-CCF6-EC2D177DCDE9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="50633E5B-2FBE-420B-6982-E6F3568CE055" name="Pais PK">
+<createdBy>Aragon Perez</createdBy>
+<createdTime>2020-07-03 18:04:53 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="591A9418-E67D-7A00-2C01-83DE4607E37B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D7EAEFFD-7BB0-8E5A-B4FD-9C7BEAB6B3AC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

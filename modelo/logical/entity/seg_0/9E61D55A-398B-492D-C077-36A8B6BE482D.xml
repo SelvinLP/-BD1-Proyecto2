@@ -1,0 +1,160 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9E61D55A-398B-492D-C077-36A8B6BE482D" name="Voto">
+<createdBy>Aragon Perez</createdBy>
+<createdTime>2020-07-03 18:12:43 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="591A9418-E67D-7A00-2C01-83DE4607E37B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_voto" id="3A77A105-246E-EE0E-7061-5D99F1D7BAD1">
+<createdBy>Aragon Perez</createdBy>
+<createdTime>2020-07-03 18:12:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="591A9418-E67D-7A00-2C01-83DE4607E37B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sexo" id="8ABF0CD6-0249-5ACF-16E8-03F89C1E23A9">
+<createdBy>Aragon Perez</createdBy>
+<createdTime>2020-07-03 18:13:08 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="591A9418-E67D-7A00-2C01-83DE4607E37B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="analfabetos" id="4831595F-D46C-F029-ABB5-8221C1227BFD">
+<createdBy>Aragon Perez</createdBy>
+<createdTime>2020-07-03 18:13:29 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="591A9418-E67D-7A00-2C01-83DE4607E37B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="alfabetos" id="39FF058F-636B-7B9F-BEAB-9C6E2BCF529D">
+<createdBy>Aragon Perez</createdBy>
+<createdTime>2020-07-03 18:13:36 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="591A9418-E67D-7A00-2C01-83DE4607E37B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="primaria" id="47C52BB9-CB83-65AD-323C-0B6C891C5494">
+<createdBy>Aragon Perez</createdBy>
+<createdTime>2020-07-03 18:13:43 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="591A9418-E67D-7A00-2C01-83DE4607E37B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nivel_medio" id="D5A20149-2FFD-8F23-841F-3EEE4738EDFC">
+<createdBy>Aragon Perez</createdBy>
+<createdTime>2020-07-03 18:13:55 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="591A9418-E67D-7A00-2C01-83DE4607E37B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="universitarios" id="6F6B4267-FE40-CC4C-2ABB-4B9366D8C832">
+<createdBy>Aragon Perez</createdBy>
+<createdTime>2020-07-03 18:14:01 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="591A9418-E67D-7A00-2C01-83DE4607E37B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_raza" id="323671EC-64C3-D576-A3CD-28220748A2EA">
+<createdBy>Aragon Perez</createdBy>
+<createdTime>2020-07-03 18:14:27 UTC</createdTime>
+<generatorID>16530484-7DE1-EEB9-E9C1-21ED20956629</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="591A9418-E67D-7A00-2C01-83DE4607E37B" value="true"/>
+</engineerTo>
+<referedAttribute>1B7609E8-96F1-2F53-C6F6-15644A379305</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_zona" id="4C559913-C740-6FAE-3A65-C0A572458F41">
+<createdBy>Aragon Perez</createdBy>
+<createdTime>2020-07-03 18:14:31 UTC</createdTime>
+<generatorID>1B84E6E7-6F7A-C191-C46B-78DF2A56F53F</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="591A9418-E67D-7A00-2C01-83DE4607E37B" value="true"/>
+</engineerTo>
+<referedAttribute>15D09503-02EC-A0E4-F19D-A96C3A1FA340</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_eleccion_partido" id="7FF2ECAF-D856-8073-AF20-15CC18F93253">
+<createdBy>Aragon Perez</createdBy>
+<createdTime>2020-07-03 18:17:27 UTC</createdTime>
+<generatorID>3345323C-6569-0D3A-EE9C-F595048290BA</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="591A9418-E67D-7A00-2C01-83DE4607E37B" value="true"/>
+</engineerTo>
+<referedAttribute>090476B4-4022-3B8C-2D70-F6E981D34B35</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D6756A92-3201-AA36-C914-0812D7A501CC" name="Voto PK">
+<createdBy>Aragon Perez</createdBy>
+<createdTime>2020-07-03 18:13:07 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="591A9418-E67D-7A00-2C01-83DE4607E37B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3A77A105-246E-EE0E-7061-5D99F1D7BAD1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

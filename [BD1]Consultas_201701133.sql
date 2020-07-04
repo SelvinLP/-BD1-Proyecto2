@@ -150,6 +150,30 @@ GROUP BY total.pais,total.region;
 
 #CONSULTA 8:Desplegar el nombre del municipio y el nombre de los dos partidos políticos con más votos en el 
 #municipio, ordenados por país.
+SELECT tem.pais,tem.municipio,tem.partido as 'Primero con mas' 
+FROM (
+	SELECT maximo.pais as pais,maximo.municipio as municipio, MAX(maximo.votos) as ax
+	FROM (
+		SELECT pais.nombre as pais, zona.fk_municipio as municipio,partido.partido as partido,SUM(voto.analfabetos+voto.alfabetos) as votos 
+		FROM voto
+		INNER JOIN zona ON zona.id_zona=voto.fk_id_zona
+		INNER JOIN pais ON pais.id_pais=zona.fk_pais
+		INNER JOIN eleccion_partido ON eleccion_partido.id_eleccion_partido=voto.fk_id_eleccion_partido
+		INNER JOIN partido ON partido.id_partido=eleccion_partido.fk_id_partido
+		GROUP BY pais.nombre, zona.fk_municipio,partido.partido
+	) as maximo
+	GROUP BY maximo.pais,maximo.municipio
+)as tot,(
+	SELECT pais.nombre as pais, zona.fk_municipio as municipio,partido.partido as partido,SUM(voto.analfabetos+voto.alfabetos) as votos 
+	FROM voto
+	INNER JOIN zona ON zona.id_zona=voto.fk_id_zona
+	INNER JOIN pais ON pais.id_pais=zona.fk_pais
+	INNER JOIN eleccion_partido ON eleccion_partido.id_eleccion_partido=voto.fk_id_eleccion_partido
+	INNER JOIN partido ON partido.id_partido=eleccion_partido.fk_id_partido
+	GROUP BY pais.nombre, zona.fk_municipio,partido.partido
+)as tem
+WHERE tem.pais=tot.pais AND tem.municipio=tot.municipio AND tem.votos=tot.ax;
+
 
 #CONSULTA 9:Desplegar el total de votos de cada nivel de escolaridad (primario, medio, universitario) por país, 
 #sin importar raza o sexo.
@@ -178,5 +202,75 @@ FROM (
 WHERE datos.pais=total.pais
 GROUP BY  datos.pais, datos.raza;
 
-#CONSULTA 11:
+#CONSULTA 11:Desplegar el nombre del país en el cual las elecciones han sido más peleadas. Para determinar esto 
+#se debe calcular la diferencia de porcentajes de votos entre el partido que obtuvo más votos y el partido que 
+#obtuvo menos votos.
+
+#CONSULTA 12:Desplegar el total de votos y el porcentaje de votos emitidos por mujeres indígenas alfabetas.
+SELECT datos.eleccion, datos.año, (datos.sub/total.nosub)*100 as 'Porcentaje (%)'
+FROM (
+	SELECT eleccion.nombre as eleccion ,eleccion.año as año, SUM(voto.alfabetos) as sub
+	FROM voto
+	INNER JOIN eleccion_partido ON eleccion_partido.id_eleccion_partido=voto.fk_id_eleccion_partido
+	INNER JOIN eleccion ON eleccion.id_eleccion= eleccion_partido.fk_id_eleccion
+    INNER JOIN raza ON (raza.id_raza=voto.fk_id_raza AND raza.tipo='INDIGENAS')
+    WHERE voto.genero='mujeres'
+    GROUP BY eleccion.nombre,eleccion.año
+) as datos,(
+	SELECT eleccion.nombre as eleccion,eleccion.año as año, SUM(voto.alfabetos+voto.analfabetos) as nosub
+	FROM voto
+	INNER JOIN eleccion_partido ON eleccion_partido.id_eleccion_partido=voto.fk_id_eleccion_partido
+	INNER JOIN eleccion ON eleccion.id_eleccion= eleccion_partido.fk_id_eleccion
+    GROUP BY eleccion.nombre,eleccion.año
+) as total
+WHERE datos.eleccion=total.eleccion AND datos.año=total.año
+GROUP BY datos.eleccion, datos.año;
+
+#CONSULTA 13:Desplegar el nombre del país, el porcentaje de votos de ese país en el que han votado mayor porcentaje 
+#de analfabetas. (tip: solo desplegar un nombre de país, el de mayor porcentaje).
+SELECT datos.pais, (datos.sm/total.sm)*100 as 'Porcentaje (%)'
+FROM (
+	SELECT pais.nombre as pais,SUM(voto.analfabetos) AS sm
+	FROM voto
+	INNER JOIN zona ON zona.id_zona=voto.fk_id_zona
+	INNER JOIN pais ON pais.id_pais=zona.fk_pais
+    GROUP BY pais.nombre
+) as datos,(
+	SELECT pais.nombre as pais,SUM(voto.analfabetos+voto.alfabetos) AS sm
+	FROM voto
+	INNER JOIN zona ON zona.id_zona=voto.fk_id_zona
+	INNER JOIN pais ON pais.id_pais=zona.fk_pais
+    GROUP BY pais.nombre
+) as total
+WHERE datos.pais=total.pais 
+GROUP BY datos.pais
+ORDER BY datos.sm/total.sm DESC LIMIT 1;
+
+#CONSULTA 14: Desplegar la lista de departamentos de Guatemala y número de votos obtenidos, 
+#para los departamentos que obtuvieron más votos que el departamento de Guatemala.
+SELECT datos.depto, datos.sm as Cantidad
+FROM (
+	SELECT pais.nombre as pais, zona.fk_depto as depto,SUM(voto.analfabetos+voto.alfabetos ) AS sm
+	FROM voto
+	INNER JOIN zona ON zona.id_zona=voto.fk_id_zona
+	INNER JOIN pais ON pais.id_pais=zona.fk_pais AND pais.nombre='GUATEMALA'
+	GROUP BY pais.nombre,zona.fk_depto
+) as datos,(
+	SELECT pais.nombre as pais,SUM(voto.analfabetos+voto.alfabetos) AS sm
+	FROM voto
+	INNER JOIN zona ON zona.id_zona=voto.fk_id_zona AND zona.fk_depto='Guatemala'
+	INNER JOIN pais ON pais.id_pais=zona.fk_pais 
+    GROUP BY pais.nombre
+) as total
+WHERE datos.pais=total.pais  AND datos.sm>total.sm;
+
+#CONSULTA 15:Desplegar el total de votos de los municipios agrupados por su letra inicial. Es decir, 
+#agrupar todos los municipios con letra A y calcular su número de votos, lo mismo para los de letra inicial B, 
+#y así sucesivamente hasta la Z.}
+SELECT SUBSTRING(zona.fk_municipio, 1, 1), SUM(voto.analfabetos+voto.alfabetos)
+FROM voto
+INNER JOIN zona ON zona.id_zona=voto.fk_id_zona 
+GROUP BY SUBSTRING(zona.fk_municipio, 1, 1)
+ORDER BY SUBSTRING(zona.fk_municipio, 1, 1);
+
 
